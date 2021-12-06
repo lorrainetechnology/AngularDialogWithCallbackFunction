@@ -26,11 +26,11 @@ npm install --save @angular/localize
 import '@angular/localize/init';
 
 9. In index.html, add following links:
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/4.42.0/default/default-main.css"></link>
+&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+&lt;link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/4.42.0/default/default-main.css"&gt;
 
 10. Add following style in the head of index.html,
-<style>
+&lt;style&gt;
                 body { font-family: "RobotoRegular",Helvetica,Arial,sans-serif; font-size: 14px; margin: 0; }
                 my-app { display: block; box-sizing: border-box; padding: 30px; }
                 my-app > .k-icon.k-i-loading { font-size: 64px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
@@ -42,10 +42,10 @@ import '@angular/localize/init';
                 .event-log { margin: 0; padding: 0; max-height: 100px; overflow-y: auto; list-style-type: none; border: 1px solid rgba(0,0,0,.08); background-color: #fff; }
                 .event-log li {margin: 0; padding: .3em; line-height: 1.2em; border-bottom: 1px solid rgba(0,0,0,.08); }
                 .event-log li:last-child { margin-bottom: -1px;}
-            </style>
+            &lt;/style&gt;
 
-11. In index.html, inside <app-root> tag, add 
-  <span class="k-icon k-i-loading" style="color: #ff6358"></span>Check the following two links for details:
+11. In index.html, inside &lt;app-root&gt; tag, add 
+  &lt;span class="k-icon k-i-loading" style="color: #ff6358">&lt;/span>Check the following two links for details:
   
 12. Check the following two links for details:
 i. https://www.telerik.com/kendo-angular-ui/components/dialogs/get-started/#:~:text=%20Getting%20Started%20with%20the%20Kendo%20UI%20for,Angular%20team.%205%20Learning%20Resources.%20%20More%20
