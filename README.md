@@ -1,27 +1,54 @@
-# Angulardialog
+Instructions:
+1. In CLI Terminal, run the following command:
+npm install --save @progress/kendo-angular-dialog @progress/kendo-angular-buttons @progress/kendo-angular-popup @progress/kendo-angular-l10n @progress/kendo-angular-common @progress/kendo-licensing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+2. In App.module.ts, add
+import { DialogsModule } from '@progress/kendo-angular-dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-## Development server
+3. In App.module.ts, import array, add
+BrowserAnimationsModule,
+DialogModule
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+4. For details on above 3 points, go to https://www.telerik.com/kendo-angular-ui/components/dialogs/get-started/#:~:text=%20Getting%20Started%20with%20the%20Kendo%20UI%20for,Angular%20team.%205%20Learning%20Resources.%20%20More%20
 
-## Code scaffolding
+5. In CLI Terminal, run the following command:
+npm install --save @progress/kendo-theme-default
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+6. In angular.json, add the following to styles array
+"node_modules/@progress/kendo-theme-default/dist/all.css"
 
-## Build
+7. In styles.css, add
+@import "~@progress/kendo-theme-default/dist/all";
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+8. In CLI Terminal, run the following command:
+npm install --save @angular/localize
 
-## Running unit tests
+9. In src/polyfills.ts, add 
+import '@angular/localize/init';
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+10. In index.html, add following links:
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/4.42.0/default/default-main.css"></link>
 
-## Running end-to-end tests
+11. Add following style in the head of index.html,
+<style>
+                body { font-family: "RobotoRegular",Helvetica,Arial,sans-serif; font-size: 14px; margin: 0; }
+                my-app { display: block; box-sizing: border-box; padding: 30px; }
+                my-app > .k-icon.k-i-loading { font-size: 64px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+                .example-wrapper { min-height: 280px; align-content: flex-start; }
+                .example-wrapper p, .example-col p { margin: 0 0 10px; }
+                .example-wrapper p:first-child, .example-col p:first-child { margin-top: 0; }
+                .example-col { display: inline-block; vertical-align: top; padding-right: 20px; padding-bottom: 20px; }
+                .example-config { margin: 0 0 20px; padding: 20px; background-color: rgba(0,0,0,.03); border: 1px solid rgba(0,0,0,.08); }
+                .event-log { margin: 0; padding: 0; max-height: 100px; overflow-y: auto; list-style-type: none; border: 1px solid rgba(0,0,0,.08); background-color: #fff; }
+                .event-log li {margin: 0; padding: .3em; line-height: 1.2em; border-bottom: 1px solid rgba(0,0,0,.08); }
+                .event-log li:last-child { margin-bottom: -1px;}
+            </style>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+12. In index.html, inside <app-root> tag, add 
+  <span class="k-icon k-i-loading" style="color: #ff6358"></span>Check the following two links for details:
+  
+13. Check the following two links for details:
+i. https://www.telerik.com/kendo-angular-ui/components/dialogs/get-started/#:~:text=%20Getting%20Started%20with%20the%20Kendo%20UI%20for,Angular%20team.%205%20Learning%20Resources.%20%20More%20
+ii. https://stackblitz.com/run/?file=index.html
