@@ -10,28 +10,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 BrowserAnimationsModule,
 DialogModule
 
-4. For details on above 3 points, go to https://www.telerik.com/kendo-angular-ui/components/dialogs/get-started/#:~:text=%20Getting%20Started%20with%20the%20Kendo%20UI%20for,Angular%20team.%205%20Learning%20Resources.%20%20More%20
-
-5. In CLI Terminal, run the following command:
+4. In CLI Terminal, run the following command:
 npm install --save @progress/kendo-theme-default
 
-6. In angular.json, add the following to styles array
+5. In angular.json, add the following to styles array
 "node_modules/@progress/kendo-theme-default/dist/all.css"
 
-7. In styles.css, add
+6. In styles.css, add
 @import "~@progress/kendo-theme-default/dist/all";
 
-8. In CLI Terminal, run the following command:
+7. In CLI Terminal, run the following command:
 npm install --save @angular/localize
 
-9. In src/polyfills.ts, add 
+8. In src/polyfills.ts, add 
 import '@angular/localize/init';
 
-10. In index.html, add following links:
+9. In index.html, add following links:
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
             <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/4.42.0/default/default-main.css"></link>
 
-11. Add following style in the head of index.html,
+10. Add following style in the head of index.html,
 <style>
                 body { font-family: "RobotoRegular",Helvetica,Arial,sans-serif; font-size: 14px; margin: 0; }
                 my-app { display: block; box-sizing: border-box; padding: 30px; }
@@ -46,9 +44,9 @@ import '@angular/localize/init';
                 .event-log li:last-child { margin-bottom: -1px;}
             </style>
 
-12. In index.html, inside <app-root> tag, add 
+11. In index.html, inside <app-root> tag, add 
   <span class="k-icon k-i-loading" style="color: #ff6358"></span>Check the following two links for details:
   
-13. Check the following two links for details:
+12. Check the following two links for details:
 i. https://www.telerik.com/kendo-angular-ui/components/dialogs/get-started/#:~:text=%20Getting%20Started%20with%20the%20Kendo%20UI%20for,Angular%20team.%205%20Learning%20Resources.%20%20More%20
 ii. https://stackblitz.com/run/?file=index.html
